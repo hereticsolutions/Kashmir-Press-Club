@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+$(if http-status == 302)Hotspot login required$(endif)
+$(if http-header == "Location")$(link-redirect)$(endif)
+<html lang="en">
+
+    <head>
+<meta http-equiv="refresh" content="0; url=$(link-redirect)">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Solify</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/sb-admin-2.css">
+		
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		
+		
+
+    </head>
+
+    <body>
+	
+	
+
+       <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong> $(username)&nbsp;</strong>Favourite Websites</h1>
+                            <div class="description">
+                            	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>Popular Websites</h3>
+                            		
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class=""></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+							<div class="hotsite-container favsite-count" >
+              <div class="hotsite hotsite-ele cur">
+                                          <span class="">
+                              
+                          <a class="hotsite_link " href="http://HereticSolutions.com/" target="_blank" log-index="1">
+                              <i class="i-hot-sprites " style="background: url(img-web/Heretic.png) no-repeat left top"></i>
+                                  <span class="span-hot-name">Heretic Solutions
+                                                                          </span>
+                          </a>
+                                                      </span>
+                                          <span class="" style="position: relative;">
+
+                              
+                          <a class="hotsite_link" href="http://enncoresorts.com" target="_blank" log-index="2">
+                              <i class="i-hot-sprites " style="background: url(img-web/rose.png) no-repeat left top"></i>
+                                  <span class="span-hot-name" style="visibility: visible;">Hotel Ennco 
+                                                                          </span>
+                          </a>
+                                                      </span>
+                                          <span class="">
+                              
+                          <a class="hotsite_link" href="http://www.facebook.com/media/set/?set=a.487046911494778.1073741828.485737644959038&type=3" target="_blank" log-index="3">
+                              <i class="i-hot-sprites " style="background: url(img-web/facebook.png) no-repeat left top"></i>
+                                  <span class="span-hot-name">Facebook 
+                                                                          </span>
+                          </a>
+                                                      </span>
+                                          <span class="">
+                              
+                          <a class="hotsite_link" href="https://www.tripadvisor.in/Hotel_Review-g665884-d2717799-Reviews-Hotel_rosepetal_Kashmir_Jammu_and_Kashmir.html" target="_blank" log-index="4">
+                              <i class="i-hot-sprites " style="background: url(img-web/trip.png) no-repeat left top"></i>
+                                  <span class="span-hot-name">Trip Advisor
+                                                                          </span>
+                          </a>
+                                                      </span>
+                                         
+                                         
+                              
+                          
+                                  </div>
+                                  
+  
+                          </div>
+					
+						</div>
+                
+       
+                    <!--div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 social-login">
+                        	<h3>...or login with:</h3>
+                        	<div class="social-login-buttons">
+	                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
+	                        		<i class="fa fa-facebook"></i> Facebook
+	                        	</a>
+	                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
+	                        		<i class="fa fa-twitter"></i> Twitter
+	                        	</a>
+	                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+	                        		<i class="fa fa-google-plus"></i> Google Plus
+	                        	</a>
+                        	</div>
+                        </div>
+                    </div-->
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+		<!--script>
+		$( document ).ready(function() {
+     $( '#register' ).hide();})
+	$( '#click' ).click( function() {
+    $( '#register' ).show();
+    
+});
+		</script-->
+		
+		
+
+    </body>
+
+</html>
